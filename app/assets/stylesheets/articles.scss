@@ -7,7 +7,7 @@ border: 1px solid #333;
 padding: 0px 10px 5px 10px;
 }
 #l{
-  width:100px;
+  width:200px;
    text-align:left;
 
 
@@ -15,4 +15,43 @@ padding: 0px 10px 5px 10px;
 #r{
   width: 400px;
   text-align:left;
+}
+  #back{
+    background-color:#432180;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border:solid 1pt #333;
+    text-align: center;
+  }
+  #back a{
+    text-decoration:none;
+    color:white;
+    font-weight: semi-bold;
+
+  }
+#edit-button{
+  background-color: #00853E;
+  border-radius: 10px;
+  padding: 5px 10px;
+    width:65px;
+    border:solid 1pt #333;
+  text-align:center;
+
+
+}
+  #edit-button a{
+    text-decoration:none;
+    color:white;
+    font-weight: semi-bold;
+
+
+  }
+.show{
+
+}
+.edit{
+
+}
+.destroy{
+
 }
