@@ -1,7 +1,6 @@
-<style>
 
-</style>
 <div id="main">
+  <div id="sub">
   <h1>Edit Article</h1>
   <% if @article.errors.any? %>
   <h2>The following errors prevented the article from being edited:</h2>
@@ -30,6 +29,7 @@
     <%= f.submit %>  |  <span id="back"><%= link_to 'Back', articles_path %></span>
   </p>
   <% end %>
+</div>
  <footer>&copy2016 BadgerTex.com</footer>
 
 </div>
