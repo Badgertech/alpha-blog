@@ -1,2 +1,93 @@
+$navbar-default-bg: #223850;
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+  #logo{
+  float:left;
+  font-size:1.7em;
+  color:white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight:bold;
+}
+  #logo:hover{
+  color:#fff;
+  text-decoration: none;
+}
+  .center{
+  text-align:center;
+}
+
+  .jumbotron{
+  width:975px;
+  background-image: asset-url('tool225.JPG');
+  background-size: cover;
+  height:550px;
+}
+  .jumbotron h1{
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight:bold;
+}
+  .btn-xlarge{
+  font-size: 1.7 em;
+  background-color: #000;
+}
+  #left{
+  float:left;
+  border-top:1pt solid #333;
+  width:800px;
+  padding: 0px 5px 0px 5px;
+}
+  #right{
+  width: 200px;
+  margin-left:800px;
+  border-top: 1pt solid #333;
+  border-left:1px solid #333;
+  padding:4px;
+}
+  footer{
+  margin-top:45px;
+  padding: 10px 10px 0px 20px;
+  border-top: 1px solid #333;
+  color: #777;
+  text-align:center;
+
+}
+  footer a:hover{
+  color: #222;
+}
+  footer small{
+  float: left;
+}
+  footer ul{
+  float:right;
+  list-style: none;
+}
+  footer ul li{
+  float: left;
+  margin-left: 15px;
+}
+  .tab-title{
+  width: 150px;
+}
+  .tab-desc{
+  width: 450px;
+}
+  .show{
+  padding-left:5px;
+}
+  .edit{
+ padding-left:5px;
+}
+  .destroy{
+  padding-left:5px;
+}
+  thead{
+  border-bottom: 1px solid #000;
+}
+form{
+  width:980px;
+}

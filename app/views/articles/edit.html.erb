@@ -1,7 +1,5 @@
-
-<div id="main">
-  <div id="sub">
   <h1>Edit Article</h1>
+<hr>
   <% if @article.errors.any? %>
   <h2>The following errors prevented the article from being edited:</h2>
   <ul>
@@ -10,11 +8,6 @@
     <% end %>
   </ul>
 <% end %>
-       <ul id="menu">
-         <li><%= link_to "Home", root_path %></li>
-         <li><%= link_to "About", pages_about_path %></li>
-         <li><%= link_to "Alpha Blog", articles_path %></li>
-     </ul>
 
   <%=form_for @article do |f| %>
   <p>
@@ -29,7 +22,4 @@
     <%= f.submit %>  |  <span id="back"><%= link_to 'Back', articles_path %></span>
   </p>
   <% end %>
-</div>
- <footer>&copy2016 BadgerTex.com</footer>
 
-</div>

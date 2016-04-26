@@ -1,12 +1,7 @@
-<div id="main">
-  <div id="sub">
+
   <p id="notice"><%= notice %></p>
     <h1>Display Article</h1>
-       <ul id="menu">
-         <li><%= link_to "Home", root_path %></li>
-         <li><%= link_to "About", pages_about_path %></li>
-         <li><%= link_to "Alpha-Blog", articles_path %></li>
-     </ul>
+
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
@@ -20,7 +15,4 @@
   <span id="edit-button"> <%= link_to "Edit", edit_article_path(@article) %> </span>|<span id="back">
   <%= link_to "Back", articles_path %></span>
   <br>
-  </div>
-  <br>
-  <footer>&copy2016 BadgerTex.com </footer>
-</div>
+
