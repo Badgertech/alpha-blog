@@ -19,7 +19,6 @@ $navbar-default-bg: #223850;
 }
 
   .jumbotron{
-  width:975px;
   background-image: asset-url('tool225.JPG');
   background-size: cover;
   height:550px;
@@ -50,11 +49,9 @@ $navbar-default-bg: #223850;
 }
   footer{
   margin-top:45px;
-  padding: 10px 10px 0px 20px;
+  padding-top: 5px;
   border-top: 1px solid #333;
   color: #777;
-  text-align:center;
-
 }
   footer a:hover{
   color: #222;
