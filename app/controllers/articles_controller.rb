@@ -29,7 +29,8 @@ class ArticlesController < ApplicationController
 
     respond_to do |format|
       if @article.save
-        format.html { redirect_to @article, notice: 'Article was successfully created.' }
+        format.html { flash[:success] = "Article was successfully created."
+          redirect_to @article  }
         format.json { render :show, status: :created, location: @article }
       else
         format.html { render :new }
@@ -41,30 +42,24 @@ class ArticlesController < ApplicationController
   # PATCH/PUT /articles/1
   # PATCH/PUT /articles/1.json
   def update
+    if @article.update(article_params)
+      flash[:success] = "Article was successfully updated"
+      redirect_to article_path(@article)
+    else
+      render 'edit'
+      end
+     end
 
-
-if @article.update(article_params)
-
-flash[:notice] = "Article was successfully updated"
-
-redirect_to article_path(@article)
-
-else
-
-render 'edit'
-
-end
-  end
-
-  # DELETE /articles/1
-  # DELETE /articles/1.json
-  def destroy
-    @article.destroy
-    respond_to do |format|
-      format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
-      format.json { head :no_content }
+    # DELETE /articles/1
+    # DELETE /articles/1.json
+    def destroy
+      @article.destroy
+      respond_to do |format|
+        format.html { flash[:warning] = "Article was success fully destroyed."
+          redirect_to articles_url  }
+        format.json { head :no_content }
+      end
     end
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

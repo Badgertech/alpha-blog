@@ -2,19 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #form{
-
 border: 1px solid #333;
 padding: 0px 10px 5px 10px;
 }
-#l{
-  width:200px;
-   text-align:left;
-
-
+#articles{
+  width:1000px;
 }
-#r{
-  width: 400px;
-  text-align:left;
+.tab-title{
+  width:100px;
+}
+.tab-des{
+  width:600px;
+}
+.show{
+width:55px;
+}
+.edit{
+width:55px;
+}
+.destroy{
+width:55px;
 }
   #back{
     background-color:#432180;
@@ -46,12 +53,3 @@ padding: 0px 10px 5px 10px;
 
 
   }
-.show{
-
-}
-.edit{
-
-}
-.destroy{
-
-}

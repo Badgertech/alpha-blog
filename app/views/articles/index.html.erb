@@ -1,12 +1,15 @@
 <p id="notice"><%= notice %></p>
 <h1>Listing Articles</h1>
   <p><%= link_to 'New Article', new_article_path %></p>
-<table >
+
+<table id="articles" >
   <thead>
     <tr>
       <th class="tab-title">Title</th>
       <th class="tab-desc">Description</th>
-      <th colspan="3"></th>
+      <th class="show"></th>
+      <th class="edit"></th>
+      <th class="destroy"></th>
     </tr>
   </thead>
 
@@ -16,8 +19,8 @@
         <td ><%= article.title %></td>
         <td ><%= article.description %></td>
         <td ><%= link_to 'Show  ', article %></td>
-        <td "><%= link_to 'Edit  ', edit_article_path(article) %></td>
-        <td class="destroy"><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td ><%= link_to 'Edit  ', edit_article_path(article) %></td>
+        <td ><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
