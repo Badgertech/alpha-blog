@@ -3,8 +3,8 @@
   <p><%= link_to 'New Article', new_article_path %></p>
 
 <table id="articles" >
-  <thead>
-    <tr>
+  <thead >
+    <tr >
       <th class="tab-title">Title</th>
       <th class="tab-desc">Description</th>
       <th class="show"></th>
@@ -14,13 +14,15 @@
   </thead>
 
   <tbody>
+
     <% @articles.each do |article| %>
+
       <tr>
-        <td ><%= article.title %></td>
-        <td ><%= article.description %></td>
-        <td ><%= link_to 'Show  ', article %></td>
-        <td ><%= link_to 'Edit  ', edit_article_path(article) %></td>
-        <td ><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="tab-title" ><%= article.title %></td>
+        <td class="tab-desc"><%= article.description %></td>
+        <td class="btn btn-xs btn-primary"><%= link_to 'Show', article %></td>
+        <td class="edit btn btn-xs btn-info"><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td class="destroy btn btn-xs btn-danger"><%= link_to 'Delete', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

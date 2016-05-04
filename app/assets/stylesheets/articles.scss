@@ -6,23 +6,25 @@ border: 1px solid #333;
 padding: 0px 10px 5px 10px;
 }
 #articles{
-  width:1000px;
+
+  border-collapse: collapse;
+  padding:10px;
+
 }
+#articles tr{
+    height:25px;
+  verticle-align: text-middle;
+}
+
 .tab-title{
-  width:100px;
+  width:150px;
+
 }
-.tab-des{
+.tab-desc{
   width:600px;
+  padding-left: 5px;
 }
-.show{
-width:55px;
-}
-.edit{
-width:55px;
-}
-.destroy{
-width:55px;
-}
+
   #back{
     background-color:#432180;
     border-radius: 10px;
