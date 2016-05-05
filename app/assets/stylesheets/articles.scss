@@ -1,57 +1,9 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#form{
-border: 1px solid #333;
-padding: 0px 10px 5px 10px;
-}
-#articles{
-
-  border-collapse: collapse;
-  padding:10px;
-
-}
-#articles tr{
-    height:25px;
-  verticle-align: text-middle;
-}
-
-.tab-title{
-  width:150px;
-
-}
-.tab-desc{
-  width:600px;
-  padding-left: 5px;
-}
-
-  #back{
-    background-color:#432180;
-    border-radius: 10px;
-    padding: 5px 10px;
-    border:solid 1pt #333;
-    text-align: center;
-  }
-  #back a{
-    text-decoration:none;
-    color:white;
-    font-weight: semi-bold;
-
-  }
-#edit-button{
-  background-color: #00853E;
-  border-radius: 10px;
-  padding: 5px 10px;
-    width:65px;
-    border:solid 1pt #333;
-  text-align:center;
 
 
-}
-  #edit-button a{
-    text-decoration:none;
-    color:white;
-    font-weight: semi-bold;
 
 
-  }
+
+

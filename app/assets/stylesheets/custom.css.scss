@@ -5,7 +5,7 @@ $navbar-default-bg: #223850;
   #logo{
   float:left;
   font-size:1.7em;
-  color:white;
+  color:#fff;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight:bold;
@@ -19,12 +19,13 @@ $navbar-default-bg: #223850;
 }
 
   .jumbotron{
-  background-image: asset-url('tool225.JPG');
+  background-image: asset-url('ostrich-red.jpg');
   background-size: cover;
-  height:550px;
+    height:600px;
+
 }
   .jumbotron h1{
-  color: white;
+  color: #fff;
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: -1px;
@@ -36,7 +37,7 @@ $navbar-default-bg: #223850;
 }
 .btn-xs{
   height:20px;
- 
+
 }
   #left{
   float:left;
@@ -74,4 +75,13 @@ $navbar-default-bg: #223850;
 
   thead{
   border-bottom: 1px solid #000;
+
+}
+
+.article_actions{
+  border-top: 1px solid #333;
+  padding-top: 5px;
+}
+.description{
+  margin-top: 0;
 }
