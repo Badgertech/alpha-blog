@@ -1,29 +1,26 @@
 <p id="notice"><%= notice %></p>
-<h1>Articles</h1>
-  <p><%= link_to 'New Article', new_article_path %></p>
+<h1 align="center">Articles</h1>
+  <% @articles.each do |article| %>
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+    <div class="well well-lg">
+      <div class="article-tile">
+        <%= link_to article.title, article_path(article) %>
+      </div>
+      <div class="article-body">
+         <%= truncate(article.description, length: 100) %>
+      </div>
+       <div class="article-actions">
+        <%= link_to "Edit this Article", edit_article_path(article), class:"btn btn-xs btn-primary" %>
+         <%= link_to "Delete this article", article_path(article), method: :delete, data:{confirm: "Are you sure you want to delete this article?"}, class: "btn btn-xs btn-danger" %>
 
-<table id="articles" >
-  <thead >
-    <tr >
-      <th class="tab-title">Title</th>
-      <th class="tab-desc">Description</th>
-      <th style="colspan:3"></th>
 
-    </tr>
-  </thead>
-
-  <tbody>
-
-    <% @articles.each do |article| %>
-
-      <tr>
-        <td class="tab-title" ><%= article.title %></td>
-        <td class="tab-desc"><%= article.description %></td>
-        <td class="btn btn-xs btn-primary"><%= link_to 'Show', article %></td>
-        <td class="btn btn-xs btn-info"><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td class="btn btn-xs btn-danger"><%= link_to 'Delete', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+       </div>
+    </div>
+  </div>
+</div>
     <% end %>
-  </tbody>
-</table>
+
+
+
 
