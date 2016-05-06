@@ -74,7 +74,7 @@ $navbar-default-bg: #223850;
 }
 
 .article_actions{
-  border-top: 1px solid #333;
+  border-top: 1px solid #888;
   padding-top: 5px;
 }
 .article-title{
@@ -82,10 +82,14 @@ $navbar-default-bg: #223850;
   font-size: 1.5 em;
 }
 .article-body{
-  border-top: 1pt solid #333;
+  border-top: 1pt solid #888;
   padding: 15px 0px;
 
 }
 .description{
   margin-top: 0;
+}
+.article-meta-details{
+  border-top: 1px solid #888;
+  margin-top: 15px;
 }
