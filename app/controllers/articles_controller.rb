@@ -25,12 +25,13 @@ class ArticlesController < ApplicationController
   # POST /articles
   # POST /articles.json
   def create
-    @article = Article.new(article_params)
 
+    @article = Article.new(article_params)
+    @article.user = User.first
     respond_to do |format|
       if @article.save
-        format.html { flash[:success] = "Article was successfully created."
-          redirect_to @article  }
+       format.html{flash[:success] = "Article was successfully created."
+          redirect_to @article}
         format.json { render :show, status: :created, location: @article }
       else
         format.html { render :new }
