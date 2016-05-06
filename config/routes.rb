@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :articles
   # The priority is based upon order of creation: first created -> highest priority.
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
   # See how all your routes lay out with "rake routes".
   root 'pages#index'
   get 'pages/about', to: 'pages#about'
