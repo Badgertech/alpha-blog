@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get 'login', to: "sessions#new"
   # See how all your routes lay out with "rake routes".
-  root 'pages#index'
+  root 'pages#home'
   get 'pages/about', to: 'pages#about'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
