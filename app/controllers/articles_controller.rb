@@ -75,9 +75,10 @@ class ArticlesController < ApplicationController
       params.require(:article).permit(:title, :description)
     end
   def require_same_user
-    if current_user != @article.user
-      flash[:danger] = "You can only modify your own article"
+    if current_user !=@article.user and !current_user.admin?
+      flash[:danger] = "You can only modify your own articles."
       redirect_to root_path
+
   end
 end
 end

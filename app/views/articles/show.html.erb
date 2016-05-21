@@ -39,7 +39,7 @@
       <hr>
 
       <%= simple_format(@article.description) %>
-
+   <% if logged_in? && (current_user == article.user || current_user.admin?) %>
       <div class="article-actions">
 
       <%= link_to "Edit", edit_article_path(@article), class: "btn btn-xs btn-primary" %>
@@ -53,5 +53,5 @@
       <%= link_to "View all", articles_path, class: "btn btn-xs btn-success" %>
 
     </div>
-
+</div>
   </div>
