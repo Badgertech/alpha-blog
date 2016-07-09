@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'pages/about', to: 'pages#about'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
+
+  resources :categories, except: [:destroy]
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
